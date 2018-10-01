@@ -1,6 +1,7 @@
 import cv2
 import sys
 
+
 #cascPath = sys.argv[1]
 faceCascade = cv2.CascadeClassifier(r'C:\Users\pasan\Desktop\opencv\sources\data\haarcascades\haarcascade_frontalface_default.xml')
 
@@ -29,6 +30,7 @@ while True:
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
+       
 
 # When everything is done, release the capture
 video_capture.release()
